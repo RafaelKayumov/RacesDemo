@@ -22,7 +22,7 @@ class UICoordinator {
     }
 
     private func startRaceList() {
-        let raceListViewController = RaceListTableViewController.instantiate()
+        let raceListViewController = StoryboardScene.RaceList.raceListTableViewController.instantiate()
         navigationController.viewControllers = [raceListViewController]
     }
 }

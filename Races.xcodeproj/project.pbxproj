@@ -13,7 +13,7 @@
 		789AB84020F4B9E70043592A /* RaceListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AB83F20F4B9E70043592A /* RaceListTableViewController.swift */; };
 		789AB84220F4B9F30043592A /* RaceList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789AB84120F4B9F30043592A /* RaceList.storyboard */; };
 		789AB84520F4BB0A0043592A /* UICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AB84420F4BB0A0043592A /* UICoordinator.swift */; };
-		789AB84720F4BF4E0043592A /* RaceListTableViewController+SceneBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AB84620F4BF4E0043592A /* RaceListTableViewController+SceneBased.swift */; };
+		789AB84B20F4CDDF0043592A /* storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AB84A20F4CDDF0043592A /* storyboards.swift */; };
 		933D39A33FADCC68E41A0F51 /* Pods_Races.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1461B9FB625351F39E181D72 /* Pods_Races.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 		789AB83F20F4B9E70043592A /* RaceListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListTableViewController.swift; sourceTree = "<group>"; };
 		789AB84120F4B9F30043592A /* RaceList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RaceList.storyboard; sourceTree = "<group>"; };
 		789AB84420F4BB0A0043592A /* UICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICoordinator.swift; sourceTree = "<group>"; };
-		789AB84620F4BF4E0043592A /* RaceListTableViewController+SceneBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RaceListTableViewController+SceneBased.swift"; sourceTree = "<group>"; };
+		789AB84A20F4CDDF0043592A /* storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storyboards.swift; sourceTree = "<group>"; };
 		C655CDC8291B34F2EDAD5EA0 /* Pods-Races.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Races.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Races/Pods-Races.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +75,7 @@
 		785659B320F4AF8400C0BB9D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				789AB84820F4C22B0043592A /* Generated */,
 				785659B720F4AFD400C0BB9D /* Utils */,
 				785659B620F4AFC600C0BB9D /* Stories */,
 				789AB84420F4BB0A0043592A /* UICoordinator.swift */,
@@ -120,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				789AB83F20F4B9E70043592A /* RaceListTableViewController.swift */,
-				789AB84620F4BF4E0043592A /* RaceListTableViewController+SceneBased.swift */,
 				789AB84120F4B9F30043592A /* RaceList.storyboard */,
 			);
 			path = RaceList;
@@ -131,6 +131,14 @@
 			children = (
 			);
 			path = RaceDetails;
+			sourceTree = "<group>";
+		};
+		789AB84820F4C22B0043592A /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				789AB84A20F4CDDF0043592A /* storyboards.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		A501A2C3A8231C64A8F8A739 /* Pods */ = {
@@ -163,6 +171,7 @@
 				7856599C20F4AE7100C0BB9D /* Resources */,
 				552BF849FA2061983B50C523 /* [CP] Embed Pods Frameworks */,
 				789AB83E20F4B5B80043592A /* ShellScript */,
+				789AB84920F4C34E0043592A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -251,6 +260,19 @@
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint";
 		};
+		789AB84920F4C34E0043592A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftGen/bin/swiftgen\n";
+		};
 		C36D23E8C30AD723890323CB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				789AB84720F4BF4E0043592A /* RaceListTableViewController+SceneBased.swift in Sources */,
+				789AB84B20F4CDDF0043592A /* storyboards.swift in Sources */,
 				789AB84020F4B9E70043592A /* RaceListTableViewController.swift in Sources */,
 				789AB84520F4BB0A0043592A /* UICoordinator.swift in Sources */,
 				785659A220F4AE7100C0BB9D /* AppDelegate.swift in Sources */,

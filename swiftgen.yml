@@ -1,0 +1,6 @@
+input_dir: Races/Source
+output_dir: Races/Source/Generated/
+storyboards:
+  paths: Stories/
+  templateName: swift4
+  output: storyboards.swift

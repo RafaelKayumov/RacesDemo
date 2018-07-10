@@ -7,6 +7,7 @@ inhibit_all_warnings!
 
 def installPods
     pod 'SwiftLint'
+    pod 'SwiftGen'
     pod 'Reusable'
 end
 
