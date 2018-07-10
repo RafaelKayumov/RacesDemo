@@ -1,6 +1,10 @@
-input_dir: Races/Source
+input_dir: Races
 output_dir: Races/Source/Generated/
 storyboards:
-  paths: Stories/
+  paths: Source/Stories/
   templateName: swift4
   output: storyboards.swift
+strings:
+  paths: Assets/Strings.strings
+  templateName: structured-swift4
+  output: strings.swift

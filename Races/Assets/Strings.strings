@@ -1,0 +1,18 @@
+/* 
+  Strings.strings
+  Races
+
+  Created by Rafael Kayumov on 10.07.2018.
+  Copyright © 2018 Rafael Kayumov. All rights reserved.
+*/
+
+"raceList.racesTitle" = "Races";
+
+"raceDetails.title" = "Title";
+"raceDetails.stats.totalTime" = "Total time";
+"raceDetails.stats.totalDistanceKM" = "Total KM";
+"raceDetails.stats.totalCal" = "Total CAL";
+
+"raceDetails.vechile.bus" = "Bus";
+"raceDetails.vechile.train" = "Train";
+"raceDetails.vechile.airplane" = "Airplane";
