@@ -32,9 +32,6 @@ DerivedData/
 *.dSYM.zip
 *.dSYM
 
-# CocoaPods
-Pods/
-
 # Carthage
 Carthage/
 
