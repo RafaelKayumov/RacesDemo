@@ -262,6 +262,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iBn-gE-pP6"/>
                     </view>
+                    <navigationItem key="navigationItem" id="FXV-UC-7pX">
+                        <barButtonItem key="rightBarButtonItem" image="Search" id="jmO-Zd-hsL">
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="avatarImageView" destination="BQR-Vr-Jt5" id="fF0-vc-mPE"/>
@@ -519,6 +524,7 @@
         <image name="Bus" width="341" height="341"/>
         <image name="PlaceIcon" width="17" height="22"/>
         <image name="Plane" width="88" height="88"/>
+        <image name="Search" width="20" height="20"/>
         <image name="Train" width="533" height="533"/>
         <image name="face1" width="67" height="66"/>
     </resources>

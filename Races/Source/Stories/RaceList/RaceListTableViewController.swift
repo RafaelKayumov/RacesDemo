@@ -16,6 +16,8 @@ class RaceListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
         title = L10n.Racelist.racesTitle
     }
 

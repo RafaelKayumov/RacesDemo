@@ -166,6 +166,11 @@
                             <outlet property="delegate" destination="5ea-xT-rCl" id="zhm-gB-r6u"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="3Sf-cV-OLf">
+                        <barButtonItem key="rightBarButtonItem" image="Search" id="2Kb-xe-ryq">
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zo-lP-Vdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -182,6 +187,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Search" width="20" height="20"/>
         <image name="Time" width="23" height="23"/>
         <image name="User" width="11" height="27"/>
         <image name="face1" width="67" height="66"/>
