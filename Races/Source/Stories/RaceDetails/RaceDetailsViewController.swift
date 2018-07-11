@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class RaceDetailsViewController: UIViewController {
 
@@ -19,6 +20,7 @@ class RaceDetailsViewController: UIViewController {
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var mapView: MKMapView!
 
     weak var race: Race?
 
@@ -30,6 +32,7 @@ class RaceDetailsViewController: UIViewController {
         totalCaloriesTitleLabel.text = L10n.Racedetails.Stats.totalCal.uppercased()
 
         configureWithRace()
+        addAndFocusAnnotation()
     }
 
     func configureWithRace() {
@@ -43,5 +46,23 @@ class RaceDetailsViewController: UIViewController {
         nameLabel.text = creator.fullName
         placeLabel.text = creator.locationTitle
         avatarImageView.image = UIImage(named: creator.avatarImageName)
+    }
+
+    private func addAndFocusAnnotation() {
+        let annotation = MKPointAnnotation.random()
+        mapView.addAnnotation(annotation)
+
+        let viewRegion = MKCoordinateRegionMakeWithDistance(annotation.coordinate, 200, 200)
+        let adjustedRegion = mapView.regionThatFits(viewRegion)
+        mapView.setRegion(adjustedRegion, animated: true)
+    }
+}
+
+extension RaceDetailsViewController: MKMapViewDelegate {
+
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "reuse")
+        annotationView.image = UIImage(asset: Asset.mapPin)
+        return annotationView
     }
 }

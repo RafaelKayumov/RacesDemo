@@ -26,6 +26,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="zIb-5c-Smx"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="RC3-al-pNF" id="Reg-lq-hFN"/>
+                                </connections>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hI-JL-InO">
                                 <rect key="frame" x="0.0" y="284" width="375" height="65"/>
@@ -262,6 +265,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="avatarImageView" destination="BQR-Vr-Jt5" id="fF0-vc-mPE"/>
+                        <outlet property="mapView" destination="YvO-0P-LCM" id="6Lz-Nu-Fjq"/>
                         <outlet property="nameLabel" destination="Vds-zO-Jsm" id="KpU-cu-Pqt"/>
                         <outlet property="placeLabel" destination="m7b-kf-BUa" id="5fE-o9-lZV"/>
                         <outlet property="totalCaloriesTitleLabel" destination="DxL-Wx-SP8" id="wEU-tz-qnl"/>
