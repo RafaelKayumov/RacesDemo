@@ -157,7 +157,7 @@
                                     <outlet property="personsCountLabel" destination="LZI-HZ-8wH" id="qRv-cN-PoS"/>
                                     <outlet property="placeTitleLabel" destination="2ON-Cb-c4v" id="6Ar-Tt-754"/>
                                     <outlet property="timeLabel" destination="yJ0-vy-y2z" id="DNK-rR-m0j"/>
-                                    <segue destination="cFK-Bo-HAI" kind="show" id="bvi-Ei-pGs"/>
+                                    <segue destination="cFK-Bo-HAI" kind="show" identifier="pushDetails" id="bvi-Ei-pGs"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

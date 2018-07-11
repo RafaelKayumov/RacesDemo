@@ -70,6 +70,9 @@ internal enum StoryboardScene {
 }
 
 internal enum StoryboardSegue {
+  internal enum RaceList: String, SegueType {
+    case pushDetails
+  }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name
 

@@ -11,7 +11,7 @@ import Foundation
 class User: Decodable {
 
     var fullName = ""
-    var timeInterval: Double = 0
+    var totalTimeString = ""
     var distance = 0
     var calories = 0
     var locationTitle = ""

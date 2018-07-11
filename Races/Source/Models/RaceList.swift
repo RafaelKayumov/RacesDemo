@@ -26,4 +26,9 @@ class RaceList {
 
         return raceList
     }
+
+    func raceAtIndex(_ index: Int) -> Race? {
+        guard races.indices.contains(index) else { return nil }
+        return races[index]
+    }
 }

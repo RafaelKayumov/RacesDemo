@@ -27,6 +27,7 @@
 		789AB86720F655040043592A /* RaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AB86620F655040043592A /* RaceDetailsViewController.swift */; };
 		789AB86920F655150043592A /* RaceDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789AB86820F655150043592A /* RaceDetails.storyboard */; };
 		789AB86B20F658910043592A /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AB86A20F658910043592A /* LineView.swift */; };
+		789AB86D20F669ED0043592A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789AB86C20F669ED0043592A /* MapKit.framework */; };
 		933D39A33FADCC68E41A0F51 /* Pods_Races.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1461B9FB625351F39E181D72 /* Pods_Races.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		789AB86620F655040043592A /* RaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailsViewController.swift; sourceTree = "<group>"; };
 		789AB86820F655150043592A /* RaceDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RaceDetails.storyboard; sourceTree = "<group>"; };
 		789AB86A20F658910043592A /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		789AB86C20F669ED0043592A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C655CDC8291B34F2EDAD5EA0 /* Pods-Races.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Races.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Races/Pods-Races.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				789AB86D20F669ED0043592A /* MapKit.framework in Frameworks */,
 				933D39A33FADCC68E41A0F51 /* Pods_Races.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +211,7 @@
 		F031DB3B4EB0B8587A010823 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				789AB86C20F669ED0043592A /* MapKit.framework */,
 				1461B9FB625351F39E181D72 /* Pods_Races.framework */,
 			);
 			name = Frameworks;
@@ -507,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4CN2VQ6HA;
 				INFOPLIST_FILE = "$(SRCROOT)/Races/Supporting-files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -525,6 +530,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4CN2VQ6HA;
 				INFOPLIST_FILE = "$(SRCROOT)/Races/Supporting-files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

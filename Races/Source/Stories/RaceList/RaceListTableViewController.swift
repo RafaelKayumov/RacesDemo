@@ -28,9 +28,21 @@ class RaceListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: RaceTableViewCell.self)
         let row = indexPath.row
-        if let races = raceList?.races, races.indices.contains(row) {
-            cell.configureWithRace(races[row])
+        if let race = raceList?.raceAtIndex(row) {
+            cell.configureWithRace(race)
         }
         return cell
+    }
+
+    // MARK: - Navigation
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "pushDetails",
+            let detailsVC = segue.destination as? RaceDetailsViewController,
+            let selectedCellIndex = tableView.indexPathForSelectedRow?.row,
+            let race = raceList?.raceAtIndex(selectedCellIndex)
+        else { return }
+
+        detailsVC.race = race
     }
 }

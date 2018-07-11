@@ -6,8 +6,8 @@
     "startDateString": "2d 12h",
     "imageName": "running1",
     "creator": {
-      "fullName": "Sam Peters",
-      "timeInterval": 10000,
+      "fullName": "Rose Freeman",
+      "totalTimeString": "1D 3H",
       "distance": 153,
       "calories": 13850,
       "locationTitle": "London, England",
@@ -21,8 +21,8 @@
     "startDateString": "1d 10h",
     "imageName": "running2",
     "creator": {
-      "fullName": "Charlie Green",
-      "timeInterval": 7500,
+      "fullName": "Jess Sanders",
+      "totalTimeString": "2D 9H",
       "distance": 77,
       "calories": 8700,
       "locationTitle": "Moscow, Russia",
@@ -36,8 +36,8 @@
     "startDateString": "1d 10h",
     "imageName": "running3",
     "creator": {
-      "fullName": "Rose Freeman",
-      "timeInterval": 15330,
+      "fullName": "John Wong",
+      "totalTimeString": "3D 5H",
       "distance": 154,
       "calories": 18700,
       "locationTitle": "Berlin, Germany",
