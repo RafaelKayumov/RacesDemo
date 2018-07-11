@@ -15,4 +15,5 @@ class User: Decodable {
     var distance = 0
     var calories = 0
     var locationTitle = ""
+    var avatarImageName = ""
 }

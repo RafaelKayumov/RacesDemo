@@ -10,7 +10,8 @@
       "timeInterval": 10000,
       "distance": 153,
       "calories": 13850,
-      "locationTitle": "London, England"
+      "locationTitle": "London, England",
+      "avatarImageName": "face1"
     }
   },
   {
@@ -24,7 +25,8 @@
       "timeInterval": 7500,
       "distance": 77,
       "calories": 8700,
-      "locationTitle": "Moscow, Russia"
+      "locationTitle": "Moscow, Russia",
+      "avatarImageName": "face2"
     }
   },
   {
@@ -38,7 +40,8 @@
       "timeInterval": 15330,
       "distance": 154,
       "calories": 18700,
-      "locationTitle": "Berlin, Germany"
+      "locationTitle": "Berlin, Germany",
+      "avatarImageName": "face3"
     }
   }
 ]
