@@ -11,6 +11,7 @@
 		785659A920F4AE7400C0BB9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 785659A820F4AE7400C0BB9D /* Assets.xcassets */; };
 		785659AC20F4AE7400C0BB9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785659AA20F4AE7400C0BB9D /* LaunchScreen.storyboard */; };
 		788258BD20F6808400801EBB /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788258BC20F6808400801EBB /* UIColor+Additions.swift */; };
+		788258BF20F688A200801EBB /* EllipseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788258BE20F688A200801EBB /* EllipseView.swift */; };
 		789AB84020F4B9E70043592A /* RaceListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AB83F20F4B9E70043592A /* RaceListTableViewController.swift */; };
 		789AB84220F4B9F30043592A /* RaceList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789AB84120F4B9F30043592A /* RaceList.storyboard */; };
 		789AB84520F4BB0A0043592A /* UICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AB84420F4BB0A0043592A /* UICoordinator.swift */; };
@@ -24,7 +25,6 @@
 		789AB85D20F4E1590043592A /* RaceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AB85C20F4E1590043592A /* RaceList.swift */; };
 		789AB85F20F631510043592A /* RacesMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 789AB85E20F631510043592A /* RacesMock.json */; };
 		789AB86120F641C10043592A /* CorneredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AB86020F641C10043592A /* CorneredView.swift */; };
-		789AB86320F6485A0043592A /* EllipseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AB86220F6485A0043592A /* EllipseView.swift */; };
 		789AB86720F655040043592A /* RaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AB86620F655040043592A /* RaceDetailsViewController.swift */; };
 		789AB86920F655150043592A /* RaceDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789AB86820F655150043592A /* RaceDetails.storyboard */; };
 		789AB86B20F658910043592A /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AB86A20F658910043592A /* LineView.swift */; };
@@ -42,6 +42,7 @@
 		785659AB20F4AE7400C0BB9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		785659AD20F4AE7400C0BB9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		788258BC20F6808400801EBB /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		788258BE20F688A200801EBB /* EllipseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipseView.swift; sourceTree = "<group>"; };
 		789AB83F20F4B9E70043592A /* RaceListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListTableViewController.swift; sourceTree = "<group>"; };
 		789AB84120F4B9F30043592A /* RaceList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RaceList.storyboard; sourceTree = "<group>"; };
 		789AB84420F4BB0A0043592A /* UICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICoordinator.swift; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		789AB85C20F4E1590043592A /* RaceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceList.swift; sourceTree = "<group>"; };
 		789AB85E20F631510043592A /* RacesMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RacesMock.json; sourceTree = "<group>"; };
 		789AB86020F641C10043592A /* CorneredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorneredView.swift; sourceTree = "<group>"; };
-		789AB86220F6485A0043592A /* EllipseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EllipseView.swift; path = ../../../../messenger/Messenger/Source/Views/EllipseView.swift; sourceTree = "<group>"; };
 		789AB86620F655040043592A /* RaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailsViewController.swift; sourceTree = "<group>"; };
 		789AB86820F655150043592A /* RaceDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RaceDetails.storyboard; sourceTree = "<group>"; };
 		789AB86A20F658910043592A /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				789AB86A20F658910043592A /* LineView.swift */,
-				789AB86220F6485A0043592A /* EllipseView.swift */,
+				788258BE20F688A200801EBB /* EllipseView.swift */,
 				789AB86020F641C10043592A /* CorneredView.swift */,
 				789AB86E20F66A800043592A /* MKPointAnnotation+Random.swift */,
 				788258BC20F6808400801EBB /* UIColor+Additions.swift */,
@@ -373,6 +373,7 @@
 				789AB85620F4DE330043592A /* images.swift in Sources */,
 				789AB84020F4B9E70043592A /* RaceListTableViewController.swift in Sources */,
 				789AB85420F4D92A0043592A /* strings.swift in Sources */,
+				788258BF20F688A200801EBB /* EllipseView.swift in Sources */,
 				789AB85B20F4E0580043592A /* User.swift in Sources */,
 				789AB84F20F4D22F0043592A /* RaceTableViewCell.swift in Sources */,
 				789AB84520F4BB0A0043592A /* UICoordinator.swift in Sources */,
@@ -381,7 +382,6 @@
 				789AB86F20F66A800043592A /* MKPointAnnotation+Random.swift in Sources */,
 				785659A220F4AE7100C0BB9D /* AppDelegate.swift in Sources */,
 				789AB86720F655040043592A /* RaceDetailsViewController.swift in Sources */,
-				789AB86320F6485A0043592A /* EllipseView.swift in Sources */,
 				789AB86B20F658910043592A /* LineView.swift in Sources */,
 				789AB86120F641C10043592A /* CorneredView.swift in Sources */,
 			);
