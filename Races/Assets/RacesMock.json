@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Some awesome place",
+    "personsCount": 8,
+    "distance": 32,
+    "startDateString": "2d 12h",
+    "imageName": "running1",
+    "creator": {
+      "fullName": "Sam Peters",
+      "timeInterval": 10000,
+      "distance": 153,
+      "calories": 13850,
+      "locationTitle": "London, England"
+    }
+  },
+  {
+    "title": "Super place",
+    "personsCount": 3,
+    "distance": 42,
+    "startDateString": "1d 10h",
+    "imageName": "running2",
+    "creator": {
+      "fullName": "Charlie Green",
+      "timeInterval": 7500,
+      "distance": 77,
+      "calories": 8700,
+      "locationTitle": "Moscow, Russia"
+    }
+  },
+  {
+    "title": "Sweet place",
+    "personsCount": 3,
+    "distance": 42,
+    "startDateString": "1d 10h",
+    "imageName": "running3",
+    "creator": {
+      "fullName": "Rose Freeman",
+      "timeInterval": 15330,
+      "distance": 154,
+      "calories": 18700,
+      "locationTitle": "Berlin, Germany"
+    }
+  }
+]

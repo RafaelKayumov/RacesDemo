@@ -11,8 +11,13 @@ import Reusable
 
 class RaceTableViewCell: UITableViewCell, Reusable {
 
+    @IBOutlet private weak var backgroundImageView: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    }
+
+    func configureWithRace(_ race: Race) {
+        backgroundImageView.image = UIImage(named: race.imageName)
     }
 }

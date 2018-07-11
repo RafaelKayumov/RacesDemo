@@ -8,3 +8,7 @@ strings:
   paths: Assets/Strings.strings
   templateName: structured-swift4
   output: strings.swift
+xcassets:
+  paths: Assets/Assets.xcassets
+  templateName: swift4
+  output: images.swift
