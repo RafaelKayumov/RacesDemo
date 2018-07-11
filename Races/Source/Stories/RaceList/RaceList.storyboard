@@ -157,6 +157,7 @@
                                     <outlet property="personsCountLabel" destination="LZI-HZ-8wH" id="qRv-cN-PoS"/>
                                     <outlet property="placeTitleLabel" destination="2ON-Cb-c4v" id="6Ar-Tt-754"/>
                                     <outlet property="timeLabel" destination="yJ0-vy-y2z" id="DNK-rR-m0j"/>
+                                    <segue destination="cFK-Bo-HAI" kind="show" id="bvi-Ei-pGs"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -165,10 +166,19 @@
                             <outlet property="delegate" destination="5ea-xT-rCl" id="zhm-gB-r6u"/>
                         </connections>
                     </tableView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zo-lP-Vdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="37.600000000000001" y="214.54272863568218"/>
+        </scene>
+        <!--RaceDetailsViewController-->
+        <scene sceneID="mLG-zS-7Qv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RaceDetails" referencedIdentifier="RaceDetailsViewController" id="cFK-Bo-HAI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IKF-v8-vOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="214"/>
         </scene>
     </scenes>
     <resources>
