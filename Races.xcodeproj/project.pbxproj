@@ -10,6 +10,7 @@
 		785659A220F4AE7100C0BB9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785659A120F4AE7100C0BB9D /* AppDelegate.swift */; };
 		785659A920F4AE7400C0BB9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 785659A820F4AE7400C0BB9D /* Assets.xcassets */; };
 		785659AC20F4AE7400C0BB9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785659AA20F4AE7400C0BB9D /* LaunchScreen.storyboard */; };
+		788258BD20F6808400801EBB /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788258BC20F6808400801EBB /* UIColor+Additions.swift */; };
 		789AB84020F4B9E70043592A /* RaceListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AB83F20F4B9E70043592A /* RaceListTableViewController.swift */; };
 		789AB84220F4B9F30043592A /* RaceList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789AB84120F4B9F30043592A /* RaceList.storyboard */; };
 		789AB84520F4BB0A0043592A /* UICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AB84420F4BB0A0043592A /* UICoordinator.swift */; };
@@ -40,6 +41,7 @@
 		785659A820F4AE7400C0BB9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		785659AB20F4AE7400C0BB9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		785659AD20F4AE7400C0BB9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		788258BC20F6808400801EBB /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 		789AB83F20F4B9E70043592A /* RaceListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListTableViewController.swift; sourceTree = "<group>"; };
 		789AB84120F4B9F30043592A /* RaceList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RaceList.storyboard; sourceTree = "<group>"; };
 		789AB84420F4BB0A0043592A /* UICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICoordinator.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				789AB86220F6485A0043592A /* EllipseView.swift */,
 				789AB86020F641C10043592A /* CorneredView.swift */,
 				789AB86E20F66A800043592A /* MKPointAnnotation+Random.swift */,
+				788258BC20F6808400801EBB /* UIColor+Additions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -301,10 +304,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Races/Pods-Races-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13Checkbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +377,7 @@
 				789AB84F20F4D22F0043592A /* RaceTableViewCell.swift in Sources */,
 				789AB84520F4BB0A0043592A /* UICoordinator.swift in Sources */,
 				789AB85D20F4E1590043592A /* RaceList.swift in Sources */,
+				788258BD20F6808400801EBB /* UIColor+Additions.swift in Sources */,
 				789AB86F20F66A800043592A /* MKPointAnnotation+Random.swift in Sources */,
 				785659A220F4AE7100C0BB9D /* AppDelegate.swift in Sources */,
 				789AB86720F655040043592A /* RaceDetailsViewController.swift in Sources */,

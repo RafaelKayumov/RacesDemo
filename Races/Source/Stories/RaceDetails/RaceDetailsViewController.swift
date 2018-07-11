@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import M13Checkbox
 
 class RaceDetailsViewController: UIViewController {
 
@@ -21,6 +22,7 @@ class RaceDetailsViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var checkboxContainer: UIView!
 
     weak var race: Race?
 
@@ -33,6 +35,7 @@ class RaceDetailsViewController: UIViewController {
 
         configureWithRace()
         addAndFocusAnnotation()
+        setupCheckbox()
     }
 
     func configureWithRace() {
@@ -46,6 +49,22 @@ class RaceDetailsViewController: UIViewController {
         nameLabel.text = creator.fullName
         placeLabel.text = creator.locationTitle
         avatarImageView.image = UIImage(named: creator.avatarImageName)
+    }
+
+    private func setupCheckbox() {
+        let checkbox = M13Checkbox(frame: checkboxContainer.bounds)
+        checkbox.checkState = .checked
+        checkbox.markType = .checkmark
+        checkbox.boxType = .square
+        checkbox.cornerRadius = 3.5
+        checkbox.boxLineWidth = 1
+        checkbox.checkmarkLineWidth = 2
+        checkbox.animationDuration = 0.2
+        checkbox.tintColor = UIColor(hex: "00C46B")
+        checkbox.secondaryTintColor = checkbox.tintColor
+        checkbox.stateChangeAnimation = .flat(M13Checkbox.AnimationStyle.fill)
+        checkbox.translatesAutoresizingMaskIntoConstraints = true
+        checkboxContainer.addSubview(checkbox)
     }
 
     private func addAndFocusAnnotation() {

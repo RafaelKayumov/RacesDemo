@@ -221,9 +221,21 @@
                                             <constraint firstAttribute="width" constant="15" id="rtx-cT-kR2"/>
                                         </constraints>
                                     </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TgE-aE-wYt">
+                                        <rect key="frame" x="338" y="15" width="22" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="7nL-Rv-9on"/>
+                                            <constraint firstAttribute="width" constant="22" id="d2e-mg-9AS"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uha-nx-LgZ">
+                                        <rect key="frame" x="341" y="51.5" width="16" height="22"/>
+                                        <state key="normal" image="Arrow"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="uha-nx-LgZ" firstAttribute="centerY" secondItem="m7b-kf-BUa" secondAttribute="centerY" id="INE-fI-dZX"/>
                                     <constraint firstItem="ddC-Su-xBX" firstAttribute="leading" secondItem="siC-Go-Srv" secondAttribute="leading" constant="15" id="N2L-FY-TrD"/>
                                     <constraint firstItem="cWn-dh-pbC" firstAttribute="leading" secondItem="Vds-zO-Jsm" secondAttribute="leading" id="ObW-O0-JKa"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Vds-zO-Jsm" secondAttribute="trailing" constant="5" id="R85-LM-SIz"/>
@@ -231,8 +243,11 @@
                                     <constraint firstItem="Vds-zO-Jsm" firstAttribute="leading" secondItem="BQR-Vr-Jt5" secondAttribute="trailing" constant="20" id="bxc-Nu-xOc"/>
                                     <constraint firstItem="Vds-zO-Jsm" firstAttribute="bottom" secondItem="BQR-Vr-Jt5" secondAttribute="centerY" id="ckC-ly-fPz"/>
                                     <constraint firstItem="m7b-kf-BUa" firstAttribute="leading" secondItem="cWn-dh-pbC" secondAttribute="trailing" constant="11" id="fFu-br-Y3s"/>
+                                    <constraint firstItem="uha-nx-LgZ" firstAttribute="centerX" secondItem="TgE-aE-wYt" secondAttribute="centerX" id="iv3-zq-8fz"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m7b-kf-BUa" secondAttribute="trailing" constant="5" id="nCw-7X-Zph"/>
+                                    <constraint firstAttribute="trailing" secondItem="TgE-aE-wYt" secondAttribute="trailing" constant="15" id="qpY-dN-PbM"/>
                                     <constraint firstItem="cWn-dh-pbC" firstAttribute="centerY" secondItem="BQR-Vr-Jt5" secondAttribute="centerY" constant="15" id="tli-LY-XBb"/>
+                                    <constraint firstItem="TgE-aE-wYt" firstAttribute="top" secondItem="siC-Go-Srv" secondAttribute="top" constant="15" id="vjz-L6-1hH"/>
                                     <constraint firstItem="ddC-Su-xBX" firstAttribute="centerY" secondItem="siC-Go-Srv" secondAttribute="centerY" id="xrA-S1-tnQ"/>
                                     <constraint firstAttribute="height" constant="90" id="zR3-Ns-THs"/>
                                 </constraints>
@@ -270,6 +285,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="avatarImageView" destination="BQR-Vr-Jt5" id="fF0-vc-mPE"/>
+                        <outlet property="checkboxContainer" destination="TgE-aE-wYt" id="ZOK-NJ-KVv"/>
                         <outlet property="mapView" destination="YvO-0P-LCM" id="6Lz-Nu-Fjq"/>
                         <outlet property="nameLabel" destination="Vds-zO-Jsm" id="KpU-cu-Pqt"/>
                         <outlet property="placeLabel" destination="m7b-kf-BUa" id="5fE-o9-lZV"/>
@@ -521,6 +537,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Arrow" width="16" height="10"/>
         <image name="Bus" width="341" height="341"/>
         <image name="PlaceIcon" width="17" height="22"/>
         <image name="Plane" width="88" height="88"/>
